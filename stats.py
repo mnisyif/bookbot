@@ -28,3 +28,8 @@ def get_sorted_chars_count(chars_count: dict):
     
     list_chars_count.sort(reverse=True, key=sort_on)
     return list_chars_count
+
+def print_sorted_chars_count(chars_count: list):
+    for item in chars_count:
+        if item["char"].isalpha():
+            print(f"{item["char"]}: {item["num"]}")
